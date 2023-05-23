@@ -15,7 +15,7 @@ const (
 )
 
 func main() {
-	creds, err := credentials.NewClientTLSFromFile("../keys/server.pem", "localhost")
+	creds, err := credentials.NewClientTLSFromFile("../../keys/server.pem", "localhost")
 	if err != nil {
 		grpclog.Fatalf("Failed to create TLS credentials %v", err)
 	}
